@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #16639a;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    /*the cursor doesn't change and the numbers on buttons won't get highlighted*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    width: 430px;
+    /*height: 440px;*/
+    margin: 20px auto;
+    padding: 0;
+    overflow: auto;
+    position: relative;
+}
+
+.menu {
+    clear: both;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: #eeeeee;
+    position: absolute;
+    top: 105px;
+    left: 105px;
+    border: 10px solid #333;
+}
+
+.btnGreen {
+    border-radius: 100% 0 0 0;
+    background: #76b51c;
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 10px solid #333;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+.btnRed {
+    border-radius: 0 100% 0 0;
+    background: #ad2121;
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 10px solid #333;
+    border-bottom: 0px;
+}
+
+.btnYellow {
+    border-radius: 0 0 0 100%;
+    background: #d1d51b;
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 10px solid #333;
+    border-right: 0px;
+}
+
+.btnBlue {
+    border-radius: 0 0 100% 0;
+    background: #2122ad;
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 10px solid #333;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ff00;
+}
+
+a:focus {
+    color: inherit;
+}
+
+hr {
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
