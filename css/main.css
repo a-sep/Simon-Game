@@ -115,6 +115,17 @@ section {
     border-radius: 3px;
 }
 
+#count-number {
+    /*TODO czcionka i kolor i rozmiar*/
+    font-family: 'VT323', monospace;
+    font-size: 2.2em;
+    color: #990000;
+    position: absolute;
+    top: -5px;
+    left: 9px;
+    margin: auto;
+}
+
 #start {
     width: 1.2em;
     height: 1.2em;
@@ -136,7 +147,7 @@ section {
 #strict-led {
     width: 0.5em;
     height: 0.5em;
-    background: #990000;
+    background: #320000;
     position: absolute;
     top: 70px;
     left: 132px;
@@ -148,11 +159,12 @@ section {
     border: 3px solid #333;
     border-radius: 100%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    border-style: outset;
 }
 
 .btn-shadow:active {
-    background: #FF5555;
     box-shadow: none;
+    border-style: inset;
 }
 
 .btn-text {
@@ -198,6 +210,13 @@ section {
     left: 90px;
     border: 2px solid #333;
     border-radius: 3px;
+    border-style: outset;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.switch:active {
+    box-shadow: none;
+    border-style: inset;
 }
 
 .on {
