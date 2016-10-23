@@ -1,8 +1,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    /*background-color: #16639a;*/
-    background: url("../img/retina_wood.png") repeat;
     font-family: 'Lato', sans-serif;
     color: #444;
     /*the cursor doesn't change and the numbers on buttons won't get highlighted*/
@@ -11,6 +9,48 @@ html, body {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+    /*animated background*/
+    background: linear-gradient(270deg, #7ac7ff, #96fc77);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 div {
@@ -18,7 +58,7 @@ div {
     padding: 0;
 }
 
-header {
+header, #victory {
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     color: #444;
