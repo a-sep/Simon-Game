@@ -121,7 +121,7 @@ function light() {
         }
     }
     if (lightIndex >= arr.length) {
-        if (count === 5) { // TODO change this line to 'count === 20'
+        if (count === 20) { // TODO change this line to 'count === 20'
             victory();
             setTimeout(playNext, 2000);
         } else {

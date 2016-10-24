@@ -10,7 +10,7 @@ html, body {
     user-select: none;
     cursor: default;
     /*animated background*/
-    background: linear-gradient(270deg, #7ac7ff, #96fc77);
+    background: linear-gradient(270deg, #77aef9, #60f666);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -66,9 +66,10 @@ header, #victory {
 }
 
 section {
+    background: #333;
     width: 331px;
     /*TODO width must be 330px , only in IE 331px*/
-    height: 330px;
+    height: 331px;
     margin: 2em auto;
     padding: 0;
     overflow: hidden;
@@ -92,17 +93,17 @@ section {
     float: left;
     border-radius: 100% 0 0 0;
     border: solid #333;
-    border-width: 10px 5px 5px 10px;
+    border-width: 10px 5px 6px 10px;
 }
 
 .btnRed {
     background: #ad2121;
     width: 150.5px;
     height: 150.5px;
-    float: left;
+    float: right;
     border-radius: 0 100% 0 0;
     border: solid #333;
-    border-width: 10px 10px 5px 5px;
+    border-width: 10px 10px 6px 5px;
 }
 
 .btnYellow {
@@ -120,7 +121,7 @@ section {
     background: #2122ad;
     width: 150.5px;
     height: 150.5px;
-    float: left;
+    float: right;
     border-radius: 0 0 100% 0;
     border: solid #333;
     border-width: 5px 10px 10px 5px;
