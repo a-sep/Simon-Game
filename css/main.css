@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    color: #444;
+    color: #333;
     /*the cursor doesn't change and the numbers on buttons won't get highlighted*/
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -66,67 +66,74 @@ header, #victory {
 }
 
 section {
-    width: 309.6px;
-    /*height: 440px;*/
+    width: 331px;
+    /*TODO width must be 330px , only in IE 331px*/
+    height: 330px;
     margin: 2em auto;
     padding: 0;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
-    border: 10px solid #333;
+    border: 0;
     border-radius: 100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, .5);
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /*// IE10+ CSS here*/
+    section {
+        width: 331px;
+    }
+}
+
 .btnGreen {
     background: #76b51c;
-    width: 150px;
-    height: 150px;
+    width: 150.5px;
+    height: 150.5px;
     float: left;
     border-radius: 100% 0 0 0;
     border: solid #333;
-    border-width: 0 5px 5px 0;
+    border-width: 10px 5px 5px 10px;
 }
 
 .btnRed {
     background: #ad2121;
-    width: 150px;
-    height: 150px;
+    width: 150.5px;
+    height: 150.5px;
     float: left;
     border-radius: 0 100% 0 0;
     border: solid #333;
-    border-width: 0 0 5px 5px;
+    border-width: 10px 10px 5px 5px;
 }
 
 .btnYellow {
     background: #d1d51b;
-    width: 150px;
-    height: 150px;
+    width: 150.5px;
+    height: 150.5px;
     clear: both;
     float: left;
     border-radius: 0 0 0 100%;
     border: solid #333;
-    border-width: 5px 5px 0 0;
+    border-width: 5px 5px 10px 10px;
 }
 
 .btnBlue {
     background: #2122ad;
-    width: 150px;
-    height: 150px;
+    width: 150.5px;
+    height: 150.5px;
     float: left;
     border-radius: 0 0 100% 0;
     border: solid #333;
-    border-width: 5px 0 0 5px;
+    border-width: 5px 10px 10px 5px;
 }
 
 .menu {
-    clear: both;
     width: 175px;
     height: 175px;
     border-radius: 100%;
     background: #eeeeee;
     position: absolute;
-    top: 57.7px;
-    left: 57.7px;
+    top: 67.3px;
+    left: 67.3px;
     border: 10px solid #333;
 }
 
@@ -156,7 +163,6 @@ section {
 }
 
 #count-number {
-    /*TODO czcionka i kolor i rozmiar*/
     font-family: 'VT323', monospace;
     font-size: 2.2em;
     color: #990000;
