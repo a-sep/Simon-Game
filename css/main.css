@@ -10,7 +10,7 @@ html, body {
     user-select: none;
     cursor: default;
     /*animated background*/
-    background: linear-gradient(270deg, #77aef9, #60f666);
+    background: linear-gradient(270deg, #3636b0, #fba626);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
